@@ -1,0 +1,6 @@
+title: ReduxFlakes
+url: https://www.reduxflakes.ga/
+
+# Build Settings
+markdown: kramdown
+remote_theme: abhinavs/moonwalk
