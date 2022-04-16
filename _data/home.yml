@@ -1,0 +1,34 @@
+navbar_entries:
+  - title: about
+    url: about
+
+  - title: blog
+    url: blog
+
+
+project_entries:
+  - title: Voyager
+    url: https://github.com/ReduxFlakes/voyager-browser
+    desc: A minimalist open source browser that respects your privacy
+
+footer_entries:
+  - title: twitter
+    url: https://twitter.com/ReduxFlakes
+
+  - title: github
+    url: https://github.com/ReduxFlakes
+
+
+misc_entries:
+  - title: this is an example vertical list
+    url: false
+
+  - title: you can show or hide using a boolean flag in _config.yml
+    url: false
+
+  - title: and you can add data in _data/home.yml
+    url: false
+
+  - title: Blog posts
+    post_list: true
+    url: false
