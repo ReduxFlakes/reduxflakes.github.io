@@ -5,7 +5,6 @@ navbar_entries:
   - title: blog
     url: blog
 
-
 project_entries:
   - title: Voyager
     url: https://github.com/ReduxFlakes/voyager-browser
@@ -17,7 +16,6 @@ footer_entries:
 
   - title: github
     url: https://github.com/ReduxFlakes
-
 
 misc_entries:
   - title: this is an example vertical list
