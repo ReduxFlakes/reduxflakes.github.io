@@ -1,7 +1,11 @@
 # Metadata
 title: ReduxFlakes
 author: Tiago Carmo
+<<<<<<< HEAD
 url: www.reduxflakes.ga
+=======
+url: https://www.reduxflakes.ga
+>>>>>>> 751fdeb6c7a8803bda210b97c940d93937a82c4d
 description: 🌼 • 15 | 📍 • Portugal | 💻 • Android app developer, Python | 
 favicon: "./"
 
