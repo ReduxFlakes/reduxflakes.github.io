@@ -6,9 +6,16 @@ navbar_entries:
     url: blog
 
 project_entries:
-  - title: Voyager
-    url: https://github.com/ReduxFlakes/voyager-browser
+  - title: Browser
+    url: https://github.com/ReduxFlakes/browser
     desc: A minimalist open source browser that respects your privacy
+    highlight: WIP
+
+project_entries:
+  - title: Smart Manager
+    url: https://github.com/ReduxFlakes/smart-manager
+    desc: Simple app for Android device maintenance
+    highlight: WIP
 
 footer_entries:
   - title: twitter
