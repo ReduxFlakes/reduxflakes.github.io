@@ -33,7 +33,7 @@ a:hover {
 .header a {
     float: left;
     color: #0000FF;
-    opacity: 0.5;
+    opacity: 0.7;
     text-align: center;
     text-decoration: none;
     margin-right: 10px;
@@ -41,12 +41,12 @@ a:hover {
 }
 
 .header a:hover {
-    opacity: 0.7;
+    opacity: 0.8;
     text-decoration: underline;
 }
 
 .header a.active {
-    opacity: 0.8;
+    opacity: 1;
     text-decoration: underline;
 }
 
