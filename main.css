@@ -5,14 +5,14 @@
 
 body {
     font-family: 'Manrope', sans-serif;
-    background-color: #FFFFFE;
-    color: #272343;
+    background-color: #2f3542;
+    color: #f1f2f6;
 }
 
 a,
 a:focus,
 a:hover {
-    color: #0000FF;
+    color: #f1f2f6;
     text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ a:hover {
 
 .header a {
     float: left;
-    color: #0000FF;
+    color: #f1f2f6;
     opacity: 0.7;
     text-align: center;
     text-decoration: none;
@@ -41,12 +41,8 @@ a:hover {
 }
 
 .header a:hover {
-    opacity: 0.8;
-    text-decoration: underline;
-}
-
-.header a.active {
-    opacity: 1;
+    opacity: 0.9;
+    color: #ff4757;
     text-decoration: underline;
 }
 
@@ -55,9 +51,9 @@ a:hover {
 }
 
 .divider {
-    background-color: #272343;
+    background-color: #2f3542;
     width: 100%;
-    border: 1px solid #272343;
+    border: 1px solid #ff4757;
     border-radius: 4px;
 }
 
@@ -96,19 +92,33 @@ a:hover {
 }
 
 .card {
-    border: #272343 2px solid;
+    border: #ff4757 2px solid;
     border-radius: 8px;
     padding: 16px;
     text-align: center;
-    background-color: #F8F8F8;
-    color: #272343;
+    background-color: #2f3542;
+    color: #f1f2f6;
+}
+
+.card a {
+    opacity: 0.7;
+    font-size: 1.15em;
+    text-decoration: underline;
+}
+
+.card a:hover {
+    opacity: 0.9;
+    color: #ff4757;
+    text-decoration: underline;
 }
 
 .card p {
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
 footer {
+    color: #ee818a;
+    opacity: 0.8;
     font-size: 0.9em;
     margin-top: 50px;
     margin-bottom: 16px;
@@ -135,11 +145,3 @@ footer {
         margin-bottom: 20px;
     }
 }
-
-@media only screen and (min-width: 600px) {}
-
-@media only screen and (min-width: 768px) {}
-
-@media only screen and (min-width: 992px) {}
-
-@media only screen and (min-width: 1200px) {}
