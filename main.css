@@ -131,6 +131,7 @@ footer {
         float: none;
         display: block;
         text-align: left;
+        font-size: 1.50em;
     }
     .header-right {
         float: none;
@@ -141,5 +142,12 @@ footer {
         width: 100%;
         display: block;
         margin-bottom: 20px;
+    }
+    .card a {
+        font-size: 1.50em;
+        text-decoration: underline;
+    }
+    .card p {
+        font-size: 1.18em;
     }
 }
