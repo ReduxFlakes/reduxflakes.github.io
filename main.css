@@ -4,7 +4,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #252d36;
+    background-color: #1e2329;
     color: #f0f0f0;
 }
 
@@ -51,7 +51,7 @@ a:hover {
 }
 
 .about p {
-    color: #a7b5bb;
+    color: #bcc6ca;
     font-size: 0.90em;
     line-height: 1.75em;
 }
@@ -83,8 +83,8 @@ a:hover {
     border-radius: 8px;
     padding: 16px;
     text-align: center;
-    background-color: #3c4650;
-    color: #adb5bd;
+    background-color: #2a313a;
+    color: #bcc6ca;
 }
 
 .card a {
@@ -97,8 +97,8 @@ a:hover {
 }
 
 footer {
-    color: #868e96;
-    font-size: 0.7em;
+    color: #bcc6ca;
+    font-size: 0.8em;
     margin-top: 30px;
     margin-bottom: 16px;
     text-align: center;
@@ -115,7 +115,10 @@ footer {
     .header a {
         display: block;
         text-align: left;
-        font-size: 1.3em;
+        font-size: 1.625em;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
     .header-right {
         float: none;
