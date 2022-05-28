@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -67,9 +68,13 @@ a:hover {
 }
 
 .column {
-    max-width: 26%;
+    width: 26%;
     float: left;
     padding-right: 8px;
+}
+
+.row {
+    margin: 0 0px;
 }
 
 .row:after {
@@ -109,8 +114,8 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .wrapper {
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 40px;
+        padding-left: 40px;
     }
     .header a {
         display: block;
@@ -119,6 +124,11 @@ footer {
         padding-right: 8px;
         padding-top: 8px;
         padding-bottom: 8px;
+    }
+    .header {
+        overflow: hidden;
+        padding-top: 40px;
+        padding-bottom: 30px;
     }
     .header-right {
         float: none;
@@ -141,6 +151,7 @@ footer {
     }
     .row {
         display: flex;
+        flex-direction: column;
         align-items: center;
         align-self: center;
         justify-content: center;
@@ -162,5 +173,26 @@ footer {
     }
     footer a {
         font-size: 0.85em;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .wrapper {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .wrapper {
+        padding-right: 80px;
+        padding-left: 80px;
     }
 }
