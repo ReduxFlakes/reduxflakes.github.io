@@ -5,15 +5,18 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #1e2329;
-    color: #f0f0f0;
+    background-color: #212529;
+    color: white;
 }
 
-a,
-a:focus,
+a {
+    color: #91a7ff;
+    text-decoration: none;
+}
+
 a:hover {
     color: #91A7FF;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .wrapper {
@@ -26,17 +29,37 @@ a:hover {
 
 .header {
     overflow: hidden;
-    padding-top: 54px;
-    padding-bottom: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #343a40;
+    -webkit-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.5);
 }
 
 .header a {
     float: left;
     text-align: center;
     text-decoration: none;
-    margin-right: 16px;
+    padding: 12px 12px;
+    margin-left: 12px;
+    margin-right: 4px;
     font-size: 1em;
+    border-radius: 8px;
+    transition: 0.2s;
+    color: white;
 }
+
+.header a:hover {
+    background-color: #748ffc;
+}
+
+.header a.active {
+    background-color: #748ffc;
+  }
 
 .header-right {
     float: left;
@@ -46,25 +69,44 @@ a:hover {
     margin-top: 16px;
 }
 
-.about h2 {
-    color: #f0f0f0;
+.about h1 {
+    text-align: center;
+    color: white;
     margin-bottom: 16px;
 }
 
 .about p {
+    text-align: center;
     color: #bcc6ca;
-    font-size: 0.90em;
-    line-height: 1.75em;
+    font-size: 1.02em;
+    line-height: 1.5em;
 }
 
 .container {
-    margin-top: 30px;
+    margin-top: 50px;
     ;
 }
 
 .container h3 {
     margin-bottom: 16px;
     font-size: 1.25em;
+}
+
+.contact {
+    margin-bottom: 50px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    color: #bcc6ca;
+}
+
+.contact li {
+    font-size: 1.1em;
+    margin-left: 16px;
+    margin-top: 16px;
+    color: #bcc6ca;
+    line-height: 0.5em;
 }
 
 .column {
@@ -84,26 +126,26 @@ a:hover {
 }
 
 .card {
-    border: 1px solid #f0f0f0;
+    border: 1px solid #91a7ff;
     border-radius: 8px;
     padding: 16px;
     text-align: center;
-    background-color: #2a313a;
+    background-color: #343a40;
     color: #bcc6ca;
 }
 
 .card a {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .card p {
-    margin-top: 5px;
-    font-size: 0.85em;
+    margin-top: 6px;
+    font-size: 0.9em;
 }
 
 footer {
     color: #bcc6ca;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-top: 30px;
     margin-bottom: 16px;
     text-align: center;
@@ -114,31 +156,24 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .wrapper {
-        padding-right: 40px;
-        padding-left: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .header {
+        overflow: hidden;
     }
     .header a {
         display: block;
         text-align: left;
-        font-size: 1.625em;
-        padding-right: 8px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-    .header {
-        overflow: hidden;
-        padding-top: 40px;
-        padding-bottom: 30px;
+        font-size: 1.30em;
     }
     .header-right {
         float: none;
     }
-    .about h2 {
-        font-size: 1.85em;
-    }
     .about p {
+        text-align: left;
         font-size: 1.12em;
-        line-height: 1.30em;
+        line-height: 1.35em;
     }
     .column {
         max-width: 100%;
@@ -167,12 +202,9 @@ footer {
         font-size: 1em;
     }
     footer {
-        font-size: 0.85em;
+        font-size: 1em;
         margin-top: 30px;
         margin-bottom: 22px;
-    }
-    footer a {
-        font-size: 0.85em;
     }
 }
 
