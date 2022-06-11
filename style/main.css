@@ -10,12 +10,11 @@ body {
 }
 
 a {
-    color: #91a7ff;
+    color: #b197fc;
     text-decoration: none;
 }
 
 a:hover {
-    color: #91A7FF;
     text-decoration: underline;
 }
 
@@ -29,53 +28,55 @@ a:hover {
 
 .header {
     overflow: hidden;
+    display: flex;
+    justify-content: center;
     padding-top: 12px;
     padding-bottom: 12px;
     margin-top: 16px;
     margin-bottom: 30px;
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: #343a40;
-    -webkit-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 5px 5px 20px -6px rgba(33, 33, 33, 0.67);
+    box-shadow: 5px 5px 20px -6px rgba(33, 33, 33, 0.67);
 }
 
 .header a {
     float: left;
     text-align: center;
     text-decoration: none;
-    padding: 12px 12px;
+    padding: 10px 12px;
     margin-left: 12px;
     margin-right: 4px;
     font-size: 1em;
-    border-radius: 8px;
+    border-radius: 6px;
     transition: 0.2s;
     color: white;
+    text-shadow: 2px 2px 7px rgba(33, 33, 33, 0.7);
 }
 
 .header a:hover {
-    background-color: #748ffc;
+    background-color: #9775fa;
 }
 
 .header a.active {
-    background-color: #748ffc;
-  }
+    background-color: #9775fa;
+}
 
 .header-right {
     float: left;
 }
 
-.about {
+.main {
     margin-top: 16px;
 }
 
-.about h1 {
+.main h1 {
     text-align: center;
-    color: white;
+    text-shadow: 2px 2px 10px rgba(151, 117, 250, 0.82);
     margin-bottom: 16px;
 }
 
-.about p {
+.main p {
     text-align: center;
     color: #bcc6ca;
     font-size: 1.02em;
@@ -92,13 +93,17 @@ a:hover {
     font-size: 1.25em;
 }
 
+.container p {
+    color: #bcc6ca;
+}
+
 .contact {
+    margin-top: 25px;
     margin-bottom: 50px;
 }
 
 .contact p {
     font-size: 1.1em;
-    color: #bcc6ca;
 }
 
 .contact li {
@@ -131,7 +136,8 @@ a:hover {
     padding: 16px;
     text-align: center;
     background-color: #343a40;
-    color: #bcc6ca;
+    -webkit-box-shadow: 5px 5px 20px -6px rgba(33, 33, 33, 0.67);
+    box-shadow: 5px 5px 20px -6px rgba(33, 33, 33, 0.67);
 }
 
 .card a {
@@ -143,12 +149,68 @@ a:hover {
     font-size: 0.9em;
 }
 
+.column-blog {
+    width: 100%;
+}
+
+.banner {
+    border-top: 2px solid #495057;
+    border-bottom: 2px solid #495057;
+    padding: 16px;
+}
+
+.banner li {
+    margin-bottom: 8px;
+    color: #bcc6ca;
+    font-size: 1em;
+}
+
+.banner a {
+    font-size: 1.1em;
+}
+
+.banner-2 {
+    border-top: 2px solid #495057;
+    border-bottom: 2px solid #495057;
+    padding: 16px;
+}
+
+.banner-2 p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+
+.banner-2 li {
+    color: #bcc6ca;
+    font-size: 1em;
+}
+
 footer {
     color: #bcc6ca;
     font-size: 0.9em;
     margin-top: 30px;
     margin-bottom: 16px;
     text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    background: #9775fa;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #7557cc;
 }
 
 
@@ -160,7 +222,12 @@ footer {
         padding-left: 20px;
     }
     .header {
-        overflow: hidden;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
     }
     .header a {
         display: block;
@@ -170,7 +237,7 @@ footer {
     .header-right {
         float: none;
     }
-    .about p {
+    .main p {
         text-align: left;
         font-size: 1.12em;
         line-height: 1.35em;
@@ -200,6 +267,14 @@ footer {
     }
     .card p {
         font-size: 1em;
+    }
+    .banner li {
+        margin-left: 4px;
+        font-size: 1.2em;
+    }
+    .banner a {
+        padding: 4px 4px;
+        font-size: 1.2em;
     }
     footer {
         font-size: 1em;
