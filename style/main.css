@@ -83,6 +83,23 @@ a:hover {
     line-height: 1.5em;
 }
 
+.main-2 {
+    margin-top: 16px;
+}
+
+.main-2 h1 {
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(151, 117, 250, 0.82);
+    margin-bottom: 16px;
+}
+
+.main-2 p {
+    text-align: center;
+    color: #bcc6ca;
+    font-size: 1.02em;
+    line-height: 1.5em;
+}
+
 .container {
     margin-top: 50px;
     ;
@@ -174,6 +191,7 @@ a:hover {
     border-top: 2px solid #495057;
     border-bottom: 2px solid #495057;
     padding: 16px;
+    margin-bottom: -2px;
 }
 
 .banner-2 p {
@@ -186,6 +204,19 @@ a:hover {
 .banner-2 li {
     color: #bcc6ca;
     font-size: 1em;
+}
+
+.banner-3 {
+    border-top: 2px solid #495057;
+    border-bottom: 2px solid #495057;
+    padding: 16px;
+    margin-bottom: -2px;
+}
+
+.banner-3 p {
+    color: #bcc6ca;
+    font-size: 1em;
+    margin-bottom: 8px;
 }
 
 footer {
@@ -223,20 +254,18 @@ footer {
         padding-left: 20px;
     }
     .header {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin-top: 0px;
         margin-bottom: 30px;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
     }
     .header a {
-        display: block;
-        text-align: left;
-        font-size: 1.30em;
-    }
-    .header-right {
-        float: none;
+        float: left;
+        font-size: 1.20em;
+        text-align: center;
+        padding: 8px 10px;
     }
     .main p {
         text-align: left;
