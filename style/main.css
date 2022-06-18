@@ -175,6 +175,10 @@ h2 {
     margin-bottom: -2px;
 }
 
+.banner-row h2 {
+    margin-top: 50px;
+}
+
 .banner li {
     margin-left: -22px;
     margin-bottom: 8px;
