@@ -46,6 +46,11 @@ a:hover {
     font-size: 1.1em;
 }
 
+.visitors {
+    margin-top: 8px;
+    float: left;
+}
+
 .divline {
     margin-top: 12px;
     margin-bottom: 16px;
