@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(20, 20, 20);
+    background: #1e1e2e;
     min-height: 100vh;
     -webkit-animation: fadein 1s;
     -moz-animation: fadein 1s;
@@ -51,19 +51,20 @@ body {
 }
 
 .content h2 {
-    color: #fff;
     font-size: 5em;
     position: absolute;
+    margin-left: 8px;
+    margin-right: 8px;
     transform: translate(-50%, -50%);
 }
 
 .content h2:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 2px #fd4848;
+    -webkit-text-stroke: 2px #cdd6f4;
 }
 
 .content h2:nth-child(2) {
-    color: #fd4848;
+    color: #cdd6f4;
     animation: animate 4s ease-in-out infinite;
 }
 
@@ -79,12 +80,12 @@ body {
 
 .about {
     margin-top: 50px;
-    color: #fd4848;
+    color: #cdd6f4;
     font-size: 1.5em;
     font-weight: 500;
     text-align: center;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 #footer {
@@ -93,18 +94,18 @@ body {
     width: 100%;
     text-align: center;
     margin-bottom: 18px;
-    font-size: 2.4em;
+    font-size: 2em;
 }
 
 #footer a {
-    color: #fff;
+    color: #cdd6f4;
     transition: 0.5s;
     margin-left: 6px;
     margin-right: 6px;
 }
 
 #footer a:hover {
-    color: #fd4848;
+    color: #f5e0dc;
 }
 
 .social {
