@@ -5,32 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Random stuff">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preload" href="https://fonts.googleapis.com/">
-    <link rel="preload" href="https://kit.fontawesome.com/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://ka-f.fontawesome.com">
-    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/87225951?v=4">
-    <script src="https://kit.fontawesome.com/42b27c65e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>ReduxFlakes</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <body>
-    <div class="content">
-        <h2>ReduxFlakes</h2>
-        <p>Android developer &bullet; App translator &bullet; Web developer &bullet; Designer</p>
-        <a href="/projects">I'm feeling lucky</a>
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html" class="active">Home</a>
+        <a href="">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <button class="btn" id="mobileMenu" onClick="myFunction()">
+            <i class="bi bi-list"></i>
+        </button>
     </div>
-    <footer id="footer">
-        <div class="social">
-            <a href="https://github.com/ReduxFlakes"><i class="fa-brands fa-github"></i></a>
-            <a href="https://twitter.com/ReduxFlakes"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.reddit.com/user/ReduxFlakes/"><i class="fa-brands fa-reddit"></i></a>
-            <a href="https://www.instagram.com/redux_flakes/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://t.me/ReduxFlakes"><i class="fa-brands fa-telegram"></i></a>
-        </div>
-    </footer>
 </body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            $("#myTopnav").animate({
+                height: "219px"
+            });
+            x.className += " responsive";
+        } else {
+            $("#myTopnav").animate({
+                height: "59px"
+            });
+            x.className = "topnav";
+        }
+    }
+</script>
 
 </html>
