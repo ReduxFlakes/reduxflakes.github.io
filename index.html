@@ -6,37 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/42b27c65e4.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
     <title>ReduxFlakes</title>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="/index.html" class="active">Home</a>
-        <a href="">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <button class="btn" id="mobileMenu" onClick="myFunction()">
-            <i class="bi bi-list"></i>
-        </button>
-    </div>
+    <nav class="navbar" id="navBar">
+        <ul>
+            <li class="navbar-title">ReduxFlakes</li>
+            <li class="navbar-button"><i class="fa-solid fa-bars"> </i></li>
+            <li class="navbar-links">
+                <a href="#">Home</a>
+            </li>
+            <li class="navbar-links">
+                <a href="#">Projects</a>
+            </li>
+            <li class="navbar-links">
+                <a href="#">About</a>
+            </li>
+            <li class="navbar-links">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
 </body>
 <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            $("#myTopnav").animate({
-                height: "219px"
-            });
-            x.className += " responsive";
-        } else {
-            $("#myTopnav").animate({
-                height: "59px"
-            });
-            x.className = "topnav";
-        }
-    }
 </script>
 
 </html>
