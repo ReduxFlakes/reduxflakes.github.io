@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
-    --clr-background: #f8f9fa;
-    --clr-primary: #7950f2;
-    --clr-gray200: #ced4da;
+    /* Brand Palette */
+    --clr-primary: #3fd896;
+    --clr-primary-hover: #1abf88;
+    /* Element Palette */
+    --clr-white: white;
+    --clr-black: black;
+    --clr-shadow: #d0dbdc;
+    /* Radius */
+    --radius: 0.25rem;
 }
 
 * {
@@ -14,14 +20,17 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--clr-background);
+    background-color: var(--clr-white);
 }
+
+
+/* START OF NAV */
 
 .navbar {
     margin: 8px;
-    background-color: white;
-    box-shadow: 0px 0px 10px var(--clr-gray200);
-    border-radius: 0.5rem;
+    background-color: var(--clr-white);
+    box-shadow: 0px 0px 12px var(--clr-shadow);
+    border-radius: var(--radius);
 }
 
 .navbar ul {
@@ -43,12 +52,22 @@ body {
     user-select: none;
 }
 
-.navbar a {
+.navbar-links a {
+    color: var(--clr-black);
     text-decoration: none;
-    color: var(--clr-href);
     font-size: 1em;
     margin-left: 1rem;
     font-weight: 500;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color: var(--clr-primary);
+}
+
+.navbar-links a.selected {
+    color: var(--clr-primary);
+    font-weight: 600;
 }
 
 .navbar-button {
@@ -56,8 +75,20 @@ body {
     font-size: 1.2rem;
 }
 
-.navbar-links:hover a {
-    color: var(--clr-onPrimaryHover);
+.navbar-button:hover {
+    color: var(--clr-primary);
+}
+
+
+/* END OF NAV */
+
+#intro {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#intro h1 {
+    color: var(--clr-primary-hover);
 }
 
 @media (max-width: 600px) {
@@ -67,8 +98,11 @@ body {
     .navbar-links a {
         display: block;
         margin-left: 0;
-        margin-top: 0.25rem;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.50rem;
+        font-size: 1.15em;
+    }
+    .navbar-links:nth-child(3) {
+        margin-top: 1rem;
     }
     .navbar-button {
         display: block;
@@ -76,6 +110,7 @@ body {
     .navbar-links {
         display: none;
         width: 100%;
+        transition: all 300ms ease-in;
     }
     .active {
         display: block;
