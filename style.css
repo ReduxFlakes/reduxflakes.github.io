@@ -5,8 +5,10 @@
     --clr-primary-hover: #1abf88;
     /* Element Palette */
     --clr-white: white;
-    --clr-black: black;
-    --clr-shadow: #d0dbdc;
+    --clr-title: #111111;
+    --clr-border: #899081;
+    --clr-light: #e8e8e8;
+    --clr-button: #424242;
     /* Radius */
     --radius: 0.25rem;
 }
@@ -27,10 +29,10 @@ body {
 /* START OF NAV */
 
 .navbar {
-    margin: 8px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color: var(--clr-white);
-    box-shadow: 0px 0px 12px var(--clr-shadow);
-    border-radius: var(--radius);
+    border-bottom: 1px solid var(--clr-border);
 }
 
 .navbar ul {
@@ -47,35 +49,41 @@ body {
 
 .navbar-title {
     flex: 1;
-    font-size: 1.25em;
-    font-weight: 600;
+    font-size: 1.5em;
+    font-weight: 300;
     user-select: none;
 }
 
-.navbar-links a {
-    color: var(--clr-black);
+.navbar-title a {
+    color: var(--clr-title);
     text-decoration: none;
-    font-size: 1em;
+}
+
+.navbar-links a {
+    color: var(--clr-title);
+    text-decoration: none;
+    font-size: 1.05em;
     margin-left: 1rem;
     font-weight: 500;
 }
 
 .navbar-links a:hover {
     text-decoration: underline;
-    color: var(--clr-primary);
-}
-
-.navbar-links a.selected {
-    color: var(--clr-primary);
-    font-weight: 600;
 }
 
 .navbar-button {
     display: none;
     font-size: 1.2rem;
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: var(--clr-button);
+    border: 2px solid var(--clr-light);
+    border-radius: var(--radius);
 }
 
 .navbar-button:hover {
+    cursor: pointer;
     color: var(--clr-primary);
 }
 
@@ -83,12 +91,18 @@ body {
 /* END OF NAV */
 
 #intro {
-    margin-top: 1rem;
     text-align: center;
 }
 
 #intro h1 {
-    color: var(--clr-primary-hover);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 2.5em;
+    color: var(--clr-button);
+}
+
+#intro p {
+    font-size: 1.25rem;
 }
 
 @media (max-width: 600px) {
@@ -114,5 +128,14 @@ body {
     }
     .active {
         display: block;
+    }
+    #intro h1 {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-size: 2em;
+        color: var(--clr-button);
+    }
+    #intro p {
+        font-size: 1.2rem;
     }
 }
