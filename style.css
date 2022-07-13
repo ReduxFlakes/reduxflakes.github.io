@@ -91,6 +91,16 @@ body {
 
 /* END OF NAV */
 
+a {
+    color: #2a7ae2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1250a1;
+    text-decoration: underline;
+}
+
 #header {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -107,17 +117,45 @@ body {
 }
 
 #header p {
+    word-wrap: break-word;
+    margin-left: 16px;
+    margin-right: 16px;
     font-size: 1.5rem;
 }
 
-#middle {
-    margin-top: 2.5rem;
-    margin-left: 12%;
-    margin-right: 12%;
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#middle p {
+.column {
+    width: 30%;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.card svg {
+    display: block;
+    margin: auto;
+}
+
+.card h1 {
+    font-size: 1.6em;
+}
+
+.card p {
+    font-weight: 500;
     font-size: 1.1em;
+}
+
+footer {
+    font-weight: 500;
+    text-align: center;
+    margin: 1rem;
+    color: var(--clr-border);
 }
 
 @media (max-width: 600px) {
@@ -154,5 +192,21 @@ body {
     }
     #header p {
         font-size: 1.3rem;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .card h1 {
+        font-size: 1.4em;
+    }
+    .card p {
+        font-size: 1.09em;
     }
 }
