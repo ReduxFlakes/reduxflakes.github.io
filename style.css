@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
-    /* Brand Palette */
-    --clr-primary: #3fd896;
-    --clr-primary-hover: #1abf88;
     /* Element Palette */
     --clr-white: white;
     --clr-title: #111111;
     --clr-border: #899081;
-    --clr-light: #e8e8e8;
+    --clr-light: #e0e0e0;
     --clr-button: #424242;
     /* Radius */
     --radius: 0.25rem;
@@ -60,6 +57,11 @@ body {
     text-decoration: none;
 }
 
+.navbar-title a:hover {
+    text-decoration: underline;
+    color: var(--clr-title);
+}
+
 .navbar-links a {
     color: var(--clr-title);
     text-decoration: none;
@@ -70,6 +72,7 @@ body {
 
 .navbar-links a:hover {
     text-decoration: underline;
+    color: var(--clr-title);
 }
 
 .navbar-button {
@@ -78,14 +81,16 @@ body {
     padding: 0.25rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    color: var(--clr-button);
+    color: var(--clr-border);
     border: 2px solid var(--clr-light);
     border-radius: var(--radius);
+    transition: all ease-in 0.2s;
 }
 
 .navbar-button:hover {
     cursor: pointer;
-    color: var(--clr-primary);
+    color: var(--clr-title);
+    background-color: var(--clr-light);
 }
 
 
@@ -107,7 +112,8 @@ a:hover {
     text-align: center;
     background-color: #ffffff;
     opacity: 1;
-    background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 10px), repeating-linear-gradient( #d8d8d855, #d8d8d8);
+    background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 10px), repeating-linear-gradient( var(--clr-light), var(--clr-light));
+    border-bottom: 1px solid var(--clr-border);
 }
 
 #header h1 {
@@ -123,14 +129,14 @@ a:hover {
     font-size: 1.5rem;
 }
 
-.cards {
+.showcase {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .column {
-    width: 30%;
+    width: 40%;
 }
 
 .card {
@@ -151,6 +157,40 @@ a:hover {
     font-size: 1.1em;
 }
 
+
+/* What I Do Style */
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.column {
+    width: 50%;
+}
+
+.list-view {
+    padding: 1.5rem;
+}
+
+.list-view h1 {
+    font-size: 1.65em;
+    margin: 0;
+}
+
+.list-view p {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.list .div {
+    color: var(--clr-border);
+    font-size: 1rem;
+    margin-top: -2rem;
+}
+
 footer {
     font-weight: 500;
     text-align: center;
@@ -158,7 +198,7 @@ footer {
     color: var(--clr-border);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .navbar ul {
         flex-wrap: wrap;
     }
@@ -193,7 +233,7 @@ footer {
     #header p {
         font-size: 1.3rem;
     }
-    .cards {
+    .showcase {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -208,5 +248,23 @@ footer {
     }
     .card p {
         font-size: 1.09em;
+    }
+}
+
+@media (min-width: 650px) {
+    .column {
+        width: 80%;
+    }
+}
+
+@media (min-width: 800px) {
+    .column {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .column {
+        width: 50%;
     }
 }
