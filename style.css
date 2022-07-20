@@ -172,6 +172,57 @@ a:hover {
     color: var(--clr-text);
 }
 
+.infor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.infor-col {
+    width: 400px;
+}
+
+.infor-box {
+    padding: 1rem;
+}
+
+.infor-box svg {
+    display: block;
+    margin: auto;
+}
+
+.infor-box h1 {
+    font-size: 1.6em;
+    color: var(--clr-header);
+}
+
+.infor-box p {
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--clr-text);
+}
+
+.infor-box a.bt {
+    display: block;
+    text-align: center;
+    margin-top: 1.15rem;
+    padding: 10px 10px;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--clr-white);
+    background-color: var(--clr-href);
+    border-radius: var(--radius);
+    transition: all ease-in 0.2s;
+    text-decoration: none;
+    user-select: none;
+}
+
+.infor-box a.bt:hover {
+    background-color: var(--clr-href-hover);
+}
+
 
 /* List */
 
