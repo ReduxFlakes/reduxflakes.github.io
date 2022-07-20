@@ -8,9 +8,8 @@
     --clr-text-metadata: #696f74;
     --clr-border: #c8cbce;
     --clr-hover: #efefef;
-    --clr-href: #2a58d6;
-    --clr-href-hover: #587bda;
-    --clr-button: #007bff;
+    --clr-href-hover: #0858da;
+    --clr-href: #0066ff;
     /* Gradient */
     --clr-grad1: #d2d4d5;
     --clr-grad2: #e7e7e7;
@@ -27,7 +26,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--clr-white);
 }
 
 a {
@@ -90,7 +88,7 @@ a:hover {
 
 .navbar-links a:hover {
     text-decoration: underline;
-    color: var(--clr-text);
+    color: var(--clr-black);
 }
 
 .navbar-button {
@@ -133,7 +131,7 @@ a:hover {
     word-wrap: break-word;
     margin-left: 16px;
     margin-right: 16px;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-weight: 500;
     color: var(--clr-text);
 }
@@ -212,7 +210,7 @@ a:hover {
     font-size: 1em;
     font-weight: 500;
     color: var(--clr-white);
-    background-color: var(--clr-button);
+    background-color: var(--clr-href);
     border-radius: var(--radius);
     transition: all ease-in 0.2s;
     text-decoration: none;
@@ -220,10 +218,6 @@ a:hover {
 }
 
 .list-box a.bt:hover {
-    background-color: var(--clr-href);
-}
-
-.list-box a.bt:active {
     background-color: var(--clr-href-hover);
 }
 
@@ -260,7 +254,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
 
 .social ul,
@@ -294,7 +288,7 @@ footer {
     font-weight: 500;
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    padding-bottom: 2.5rem;
     color: var(--clr-text-metadata);
 }
 
