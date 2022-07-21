@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
     /* Element Palette */
-    --clr-white: white;
-    --clr-black: black;
-    --clr-header: #48484d;
-    --clr-text: #52595f;
-    --clr-text-metadata: #696f74;
-    --clr-border: #c8cbce;
-    --clr-hover: #efefef;
-    --clr-href-hover: #0858da;
-    --clr-href: #0066ff;
-    /* Gradient */
-    --clr-grad1: #d2d4d5;
-    --clr-grad2: #e7e7e7;
+    --clr-white: #fff;
+    --clr-dark: #212529;
+    --clr-header: #ffffff;
+    --clr-text: #b0b0b0;
+    --clr-text-metadata: #8f8f8f;
+    --clr-href: #ffffff;
+    --clr-href-hover: #8d6af6;
+    --clr-border: #3a3f45;
     /* Radius */
     --radius: 0.25rem;
 }
@@ -21,31 +17,35 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--clr-dark)
 }
 
 a {
     color: var(--clr-href);
     text-decoration: none;
+    transition: all ease-in 0.1s;
 }
 
 a:hover {
     color: var(--clr-href-hover);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
 /* START OF NAV */
 
 .navbar {
+    width: 100%;
     margin: 0;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: var(--clr-white);
+    position: fixed;
+    backdrop-filter: blur(8px);
     border-bottom: 2px solid var(--clr-border);
 }
 
@@ -64,18 +64,17 @@ a:hover {
 .navbar-title {
     flex: 1;
     font-size: 1.5em;
-    font-weight: 400;
-    user-select: none;
 }
 
 .navbar-title a {
     text-decoration: none;
-    color: var(--clr-black);
+    color: var(--clr-white);
+    height: auto;
 }
 
-.navbar-title a:hover {
-    text-decoration: underline;
-    color: var(--clr-black);
+.navbar-title svg {
+    display: block;
+    margin: auto;
 }
 
 .navbar-links a {
@@ -83,12 +82,13 @@ a:hover {
     font-size: 1.05em;
     margin-left: 1rem;
     font-weight: 500;
-    color: var(--clr-text);
+    color: var(--clr-href);
+    transition: all ease-in 0.1s;
 }
 
 .navbar-links a:hover {
-    text-decoration: underline;
-    color: var(--clr-black);
+    color: var(--clr-href-hover);
+    text-decoration: none;
 }
 
 .navbar-button {
@@ -97,7 +97,7 @@ a:hover {
     padding: 0.25rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    color: var(--clr-text);
+    color: var(--clr-white);
     border: 2px solid var(--clr-border);
     border-radius: var(--radius);
     transition: all ease-in 0.2s;
@@ -105,20 +105,19 @@ a:hover {
 
 .navbar-button:hover {
     cursor: pointer;
-    color: var(--clr-black);
-    background-color: var(--clr-hover);
+    color: var(--clr-href-hover);
+    background-color: var(--clr-border);
 }
 
 
 /* END OF NAV */
 
 #header {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 2.5rem;
     text-align: center;
-    background-color: var(--clr-white);
-    background-image: repeating-radial-gradient( circle at 0 0, transparent 0, var(--clr-white) 10px), repeating-linear-gradient( var(--clr-grad1), var(--clr-grad2));
-    border-bottom: 2px solid var(--clr-border);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 #header h1 {
@@ -129,8 +128,8 @@ a:hover {
 
 #header p {
     word-wrap: break-word;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     font-size: 1.3em;
     font-weight: 500;
     color: var(--clr-text);
@@ -172,57 +171,6 @@ a:hover {
     color: var(--clr-text);
 }
 
-.infor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2.5rem;
-}
-
-.infor-col {
-    width: 400px;
-}
-
-.infor-box {
-    padding: 1rem;
-}
-
-.infor-box svg {
-    display: block;
-    margin: auto;
-}
-
-.infor-box h1 {
-    font-size: 1.6em;
-    color: var(--clr-header);
-}
-
-.infor-box p {
-    font-weight: 500;
-    font-size: 1.1em;
-    color: var(--clr-text);
-}
-
-.infor-box a.bt {
-    display: block;
-    text-align: center;
-    margin-top: 1.15rem;
-    padding: 10px 10px;
-    font-size: 1em;
-    font-weight: 500;
-    color: var(--clr-white);
-    background-color: var(--clr-href);
-    border-radius: var(--radius);
-    transition: all ease-in 0.2s;
-    text-decoration: none;
-    user-select: none;
-}
-
-.infor-box a.bt:hover {
-    background-color: var(--clr-href-hover);
-}
-
 
 /* List */
 
@@ -261,9 +209,9 @@ a:hover {
     font-size: 1em;
     font-weight: 500;
     color: var(--clr-white);
-    background-color: var(--clr-href);
+    background-color: var(--clr-border);
     border-radius: var(--radius);
-    transition: all ease-in 0.2s;
+    transition: all ease-in 0.1s;
     text-decoration: none;
     user-select: none;
 }
@@ -285,19 +233,24 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 
 .or-col {
     width: 50%;
 }
 
-.or-box a {
+.cate {
     display: block;
-    padding: 0.40rem;
     font-size: 1.2em;
     font-weight: 500;
-    color: var(--clr-header);
+    color: var(--clr-href);
+    transition: all ease-in 0.1s;
+    padding: 0.5rem;
+}
+
+.cate:hover {
+    color: var(--clr-href-hover);
 }
 
 .social {
@@ -317,16 +270,15 @@ li {
 }
 
 .social a {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-    color: var(--clr-header);
-    opacity: 0.8;
-    font-size: 2em;
-    transition: all ease-in 0.2s;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    color: var(--clr-href);
+    font-size: 1.8em;
+    transition: all ease-in 0.1s;
 }
 
 .social a:hover {
-    opacity: 1;
+    color: #8d6af6;
 }
 
 hr {
@@ -367,8 +319,8 @@ footer {
         display: block;
     }
     #header {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 6rem;
+        padding-bottom: 1rem;
     }
     #header h1 {
         font-size: 1.75em;
@@ -397,12 +349,11 @@ footer {
         margin-top: 1rem;
         padding: 8px 8px;
         font-size: 1em;
-        font-weight: 500;
-        color: var(--clr-white);
-        background-color: var(--clr-button);
-        border-radius: var(--radius);
-        transition: all ease-in 0.2s;
-        text-decoration: none;
+    }
+    .cate {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0.5rem;
     }
     .social a {
         font-size: 2.25em;
