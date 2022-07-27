@@ -67,6 +67,10 @@ p {
   line-height: 1.9rem;
 }
 
+br {
+  user-select: none;
+}
+
 header {
   z-index: 999;
   position: fixed;
