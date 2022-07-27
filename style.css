@@ -1,8 +1,8 @@
 :root {
   /* light */
   --clr-dark: #000000;
-  --clr-primary: #3b3d4b;
-  --clr-primary-variant: rgb(121, 122, 130);
+  --clr-primary: #2c2c2c;
+  --clr-primary-variant: #6a6a6a;
   --clr-secondary: #666666;
   --clr-tertiary: #f5f5f5;
   /* dark */
@@ -51,20 +51,23 @@ li {
 
 h1 {
   font-size: 2rem;
-  color: var(--clr-dark);
+  color: var(--clr-primary);
+  margin-bottom: 1rem;
 }
 h2 {
   font-size: 1.85rem;
-  color: var(--clr-dark);
+  color: var(--clr-primary);
+  margin-bottom: 1rem;
 }
 h3 {
   font-size: 1.75rem;
-  color: var(--clr-dark);
+  color: var(--clr-primary);
+  margin-bottom: 1rem;
 }
 p {
   font-size: 1.125rem;
-  color: var(--clr-primary);
-  line-height: 1.9rem;
+  color: var(--clr-secondary);
+  line-height: 1.8rem;
 }
 
 br {
@@ -106,9 +109,10 @@ header.solid {
 
 .nav .nav-title p {
   font-size: 1.5rem;
+  margin-bottom: 0;
   font-weight: 300;
   text-transform: uppercase;
-  color: var(--clr-dark);
+  color: var(--clr-primary);
 }
 
 .nav .nav-btn {
@@ -122,11 +126,12 @@ header.solid {
 
 .nav .nav-links li {
   display: inline;
-  font-size: 1.15rem;
   margin-right: 1rem;
+  list-style: none;
 }
 
 .nav .nav-links li a {
+  padding-left: 0;
   display: inline-block;
   text-decoration: none;
   color: var(--clr-secondary);
@@ -154,14 +159,12 @@ section.intro {
   align-items: center;
 }
 
-section.intro h1 {
-  margin-bottom: 0.75rem;
-}
-
 section.intro p {
-  max-width: 48ch;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+  max-width: 45ch;
+  word-wrap: break-word;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 710px) {
@@ -214,13 +217,14 @@ section.intro p {
     padding: 0.25rem;
     margin-block: 0.5rem;
     opacity: 0;
-    transition: opacity 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
   }
-  .nav .nav-links a:last-child {
-    margin-right: auto;
-    margin-bottom: 0.5rem;
+
+  .nav .nav-links ul li:last-child {
+    margin-right: 0 auto;
+    margin-bottom: 0.75rem;
   }
-  .nav #nav-check:not(:checked) ~ .nav-links {
+  .nav > #nav-check:not(:checked) ~ .nav-links {
     transform: scale(1, 0);
   }
   .nav > #nav-check:checked ~ .nav-links {
